@@ -1,4 +1,4 @@
-# bichanos-web-client
+# bichinhos-web-client
 
 ## Build Setup
 
