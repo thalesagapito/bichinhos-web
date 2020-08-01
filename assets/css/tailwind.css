@@ -1,0 +1,33 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+input {
+  @apply h-12 rounded-lg px-3 py-2 transition-all duration-300 border-2 border-transparent bg-light-blue;
+
+  &:active, &:focus {
+    @apply outline-none border-orange-400;
+  }
+}
+
+button {
+  @apply h-12 rounded-lg text-white uppercase font-bold transition-all duration-300;
+
+  &.orange {
+    @apply bg-primary-orange;
+  }
+
+  &.indigo {
+    @apply bg-primary-indigo;
+  }
+
+  &:hover {
+    @apply bg-opacity-70;
+  }
+  &:focus {
+    @apply outline-none text-opacity-60;
+  }
+  &:active {
+    @apply bg-opacity-90 text-opacity-90 transform scale-95 ease-out;
+  }
+}
